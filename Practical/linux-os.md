@@ -75,16 +75,3 @@ Change priority of running process :
 > $ renice -n  -12  -p 1055		# for specific process 
 > $ renice -n -2  -u apache   		# for user apache
 
-## Tools
-interact with kernel module : https://developer.ibm.com/articles/control-linux-kernel-extensions/ 
-
-netlink : https://insujang.github.io/2019-02-07/implementing-a-new-custom-netlink-family-protocol/ 
-
-Timekeeper : https://github.com/Vignesh2208/TimeKeeper/tree/TimeKeeper-4.0
-
-**ProgMP: Programmable MultiPath TCP Scheduling**
-https://progmp.net/
-https://github.com/vandit86/mptcp_progmp/tree/progmp_master
-
-**TCP_INFO socket option :** 
-	https://linuxgazette.net/136/pfeiffer.html 
