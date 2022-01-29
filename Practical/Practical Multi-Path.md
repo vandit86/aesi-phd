@@ -482,62 +482,7 @@ bind mount
 
 
 
-### **TCP tuning**
 
-<https://fasterdata.es.net/host-tuning/linux/>
-
-The **cwnd of this path should be set as 0** which indicates it is **unable for data transmission**
-
-TCP performance depends on the product of the **transfer rate** and the **round-trip delay**
-
-retransmission timeout (RTO) interval is essential to TCP performance. RTO is determined by estimating the mean and variance of the measured round-trip time (RTT)
-##### ***linux network tuning links***
-
-- <https://wenxueliu.github.io/blog/10/10/2014/linux-tuning>			(to read)
-- <https://habr.com/ru/company/webo/blog/327050/>
-- <https://tools.ietf.org/html/draft-stenberg-httpbis-tcp-03>				(tcp tuning for http)
-- <https://fasterdata.es.net/host-tuning/linux/test-measurement-host-tuning/> 	(configure  test host)
-- [TCP_NODELAY & Nagle's Algorithm | ExtraHop](https://www.extrahop.com/company/blog/2016/tcp-nodelay-nagle-quickack-best-practices/)  				(TCP\_NODELAY)
-
-
-
-##### ***Congestion control***
-
-**# check available congestion control**
-
-sysctl net | grep congestion
-
-**add congestion control**
-
-sudo modprobe mptcp\_balia
-
-add permanently :
-
-vad@vad-VB:~/ns-3-dev$ echo mptcp\_balia | sudo tee -a /etc/modules
-
-vad@vad-VB:~/ns-3-dev$ echo mptcp\_olia | sudo tee -a /etc/modules
-
-vad@vad-VB:~/ns-3-dev$ echo mptcp\_wvegas | sudo tee -a /etc/modules
-
-**set congestion control**
-
-sudo sysctl net.ipv4.tcp\_available\_congestion\_control
-
-net.ipv4.tcp\_congestion\_control=cubic
-
-`	`sysctl net.ipv4.tcp\_congestion\_control=reno
-#####
-##### ***window scaling***
-максимальный размер окна приема в TCP равен 64 КБ, если только не включено масштабирование окна
-
-sudo sysctl -w net.ipv4.tcp\_window\_scaling=0
-
-##### ***socket buffer size***
-sysctl net.ipv4.tcp\_rmem
-
-sysctl net.ipv4.tcp\_wmem
-#####
-For the TCP buffer size, we change the maximum receive/send buffer memory specified in tcp\_rmem and tcp\_wmem
 
 ##
 ## **MPTCP v1**
