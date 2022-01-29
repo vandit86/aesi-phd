@@ -6,4 +6,4 @@ Each task or small project is contained in a subdirectory of the repository:
 
 
 - [ ] test1 
-- [ ] test2 
+- [ ] test2 [rm](./README.md)
