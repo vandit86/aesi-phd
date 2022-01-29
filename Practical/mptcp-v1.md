@@ -1,6 +1,12 @@
+- [About](#about)
+- [usage](#usage)
+- [Configuration](#Configuration)
+- [Configuration with iptools2](#iptools2)
+- [Netlink PM (mptcpd)](#netlink)
+
 # MPTCP v1
 
-## About
+## About <a name="about"></a>
 
 RFC 8684 : https://www.rfc-editor.org/rfc/rfc8684.html#name-requesting-a-change-in-a-pa 
 
@@ -33,7 +39,7 @@ No coupled congestion controls are supported (yet), regular ones per subflow are
     - intel gays  
 
 
-## Usage 
+## Usage <a name="usage"></a>
 
 use_mptcp :   https://github.com/pabeni/mptcp-tools 
 
@@ -44,7 +50,7 @@ It will build on the fly wrapper library to hijack the socket() libcall, require
 `sh /home/vad/mptcp-tools/use_mptcp/use_mptcp.sh  iperf3 -s &`
 q
   
-## Configuration 
+## Configuration <a name="Configuration"></a>
 
   **/proc/sys/net/mptcp/*** Variables   → configuration variables 
 https://www.kernel.org/doc/html/v5.15-rc6/networking/mptcp-sysctl.html 
@@ -59,7 +65,7 @@ https://www.kernel.org/doc/html/v5.15-rc6/networking/mptcp-sysctl.html
 - **stale_loss_cnt** - INTEGER The number of MPTCP-level retransmission intervals with no traffic and pending outstanding data on a given subflow required to declare it stale. The packet scheduler ignores stale subflows. A low stale_loss_cnt value allows for fast active-backup switch-over, an high value maximize links utilization on edge scenarios e.g. lossy link with high BER or peer pausing the data processing. This is a per-namespace sysctl. Default: 4
 
 
-## Configuration with iptools2 
+### Configuration with iptools2 <a name="iptools2"></a>
 
   iproute2 new version (supports mptcp)-> https://git.kernel.org/pub/scm/network/iproute2/iproute2.git/ 
   
@@ -67,7 +73,7 @@ https://www.kernel.org/doc/html/v5.15-rc6/networking/mptcp-sysctl.html
 
 (iproute2 how to use) https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/html/configuring_and_managing_networking/getting-started-with-multipath-tcp_configuring-and-managing-networking 
   
-## Netlink PM (mptcpd) 
+## Netlink PM (mptcpd) <a name="netlink"></a>
 
 git -> https://github.com/intel/mptcpd
   
