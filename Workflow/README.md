@@ -1,9 +1,5 @@
 Each task or small project is contained in a subdirectory of the repository:
 
- - [01-first-task](./01-first-task)
- - [02-second-task](./02-second-task)
- - [03-third-task](./03-third-task)
-
-
-- [ ] test1 
-- [ ] test2 [rm](./README.md)
+ - [first-paper (SimuTools 2021, Emulation of multipath solutions in HetNet ...)](./paper-emulation)
+ - [second-paper (Cross-layer path manager for V2X)](./paper-cross-layer)
+ 
