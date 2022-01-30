@@ -30,8 +30,10 @@ find a pattern in source code :
 #### CAIA
 We calculated RTT using the S**ynthetic Packet Pair (SPP**). <http://caia.swin.edu.au/tools/spp/>
 
-### Emulation config <a name="emulation"></a> 
 
+
+### Emulation config <a name="emulation"></a> 
+- <https://www.inf.usi.ch/faculty/carzaniga/edu/adv-ntw/mininet.pdf> (**Manual configuration netns for network emulation**)
 - <https://habr.com/ru/post/24046/>  (**Эмуляция влияния глобальных сетей**)
 
 #### netem / tc command
