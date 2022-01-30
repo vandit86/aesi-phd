@@ -181,6 +181,7 @@ Realistic Traffic Generator <https://trex-tgn.cisco.com/>
 - `tcptrace -S -zxy merged-1.pcap`   # generate time-seq graph
 - `tcptrace -T -A50 -y -zxy merged-1.pcap` # generate tput graphs  
 - visualize with **xplot.org**
+- xplot-to-gnuplot http://manpages.ubuntu.com/manpages/bionic/man1/xpl2gpl.1.html 
 
 
 ### Other <a name="other"></a>
