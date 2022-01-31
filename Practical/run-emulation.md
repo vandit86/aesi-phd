@@ -15,7 +15,12 @@ By receiving Test_Cmd from ns3, **plugin start tcpdump session**, and s**ave dum
 
 `sudo ./waf --run "v2i-multipath --simTime=60 --sumo-gui=false  --use-mptcpd --iperf=30"`
 
-–use-mptcp : set if you need to use netlink mptcp PM plugin (threashold -75 dBm, change backup flag of WLAN) 
+-simTime, Total duration of the simulation [s]
+
+-sumo-gui, "Use SUMO gui or not", 
+
+–use-mptcp : set if you need to use netlink mptcp PM plugin (threashold -75 dBm, change backup flag of WLAN)
+
 –iperf=30  : if you want  that mptcpd run iperf session for 30 sec
 
 4. After simulation end on ‘left’ NS, **merge dump** of 2 ifaces : 
