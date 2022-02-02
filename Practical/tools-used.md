@@ -178,7 +178,7 @@ Realistic Traffic Generator <https://trex-tgn.cisco.com/>
 - (bad) **mptcptrace** : [mptcptrace](https://bitbucket.org/bhesmans/mptcptrace)  last commit 2014/15 (not verified)
 - (not testet with v1) **Mptcpanalyzer** is a python tool conceived to help with MPTCP pcap analysis (as [mptcptrace](https://bitbucket.org/bhesmans/mptcptrace) for instance).  Paper : Passive analysis for multipath TCP <https://github.com/teto/mptcpanalyzer>
 - (Good!) **A collection tools for analysis and configuration of MPTCP**): <https://github.com/nasa/multipath-tcp-tools/>
-- (Not tested )**de Qoick** <https://github.com/multipath-tcp/mptcp-analysis-scripts>
+- (Not tested )**de Qoick** <https://github.com/multipath-tcp/mptcp-analysis-scripts> : based on mptcp .. 
 
 - `tcptrace -S -zxy merged-1.pcap`   # generate time-seq graph
 - `tcptrace -T -A50 -y -zxy merged-1.pcap` # generate tput graphs  
