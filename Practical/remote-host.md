@@ -45,6 +45,9 @@ after configure in tutorial add to `crontab -e` : make backup every day
 30 4 * * * rclone copy --max-age 24h --progress  /home/vad/OneDrive/ onedrive:Remote-VM-UM-Backup > rclone.onedrive.log
 `
 
+clone immediately : 
+`rclone copy  --progress  /home/vad/OneDrive/ onedrive:Remote-VM-UM-Backup`
+
 `rclone lsd remote` :
 
 `rclone ls remote`:  List all the files in your OneDrive
