@@ -5,3 +5,6 @@ PhD workflow, data, results and more ..
 
 ## My work setup
 ![Alt text](./img/work1.png)
+
+# Workplan 22/23
+![Alt text](./img/work-plan-22-23.png)
