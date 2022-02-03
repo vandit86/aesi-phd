@@ -23,6 +23,12 @@ By receiving Test_Cmd from ns3, **plugin start tcpdump session**, and s**ave dum
 
 –iperf=30  : if you want  that mptcpd run iperf session for 30 sec
 
+-iperfStart: Set initial time to captute traffic, default 1
+
+-"tcpdump", Capture traffic on vehicle interfaces (client namespace) during **simTime-1** 
+
+run `./waf --run "v2i-multipath --PrintHelp"`  to see all options 
+
 4. After simulation end on ‘left’ NS, **merge dump** of 2 ifaces : 
 `mergecap dump-0.pcap dump-1.pcap -w /home/vad/ns-3-dev/dump-merged.pcap`
 
