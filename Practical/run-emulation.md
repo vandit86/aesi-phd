@@ -13,22 +13,22 @@ By receiving Test_Cmd from ns3, **plugin start tcpdump session**, and s**ave dum
 
 3. Run ns3 :
 
-`sudo ./waf --run "v2i-multipath --simTime=60 --sumo-gui=false  --use-mptcpd --iperf=30"`
-
--simTime, Total duration of the simulation [s]
-
--sumo-gui, "Use SUMO gui or not", 
-
-–use-mptcp : set if you need to use netlink mptcp PM plugin (threashold -75 dBm, change backup flag of WLAN)
-
-–iperf=30  : if you want  that mptcpd run iperf session for 30 sec
-
--iperfStart: Set initial time to captute traffic, default 1
-
--"tcpdump", Capture traffic on vehicle interfaces (client namespace) during **simTime-1** 
-
-run `./waf --run "v2i-multipath --PrintHelp"`  to see all options 
-
+> `sudo ./waf --run "v2i-multipath --simTime=60 --sumo-gui=false  --use-mptcpd --iperf=30"`
+> 
+> -simTime, Total duration of the simulation [s]
+> 
+> -sumo-gui, "Use SUMO gui or not", 
+> 
+> –use-mptcp : set if you need to use netlink mptcp PM plugin (threashold -75 dBm, change backup flag of WLAN)
+> 
+> –iperf=30  : if you want  that mptcpd run iperf session for 30 sec
+> 
+> -iperfStart: Set initial time to captute traffic, default 1
+> 
+> -"tcpdump", Capture traffic on vehicle interfaces (client namespace) during **simTime-1** 
+> 
+> run `./waf --run "v2i-multipath --PrintHelp"`  to see all options 
+> 
 4. After simulation end on ‘left’ NS, **merge dump** of 2 ifaces : 
 `mergecap dump-0.pcap dump-1.pcap -w /home/vad/ns-3-dev/dump-merged.pcap`
 
