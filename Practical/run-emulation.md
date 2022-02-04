@@ -13,7 +13,7 @@ By receiving Test_Cmd from ns3, **plugin start tcpdump session**, and s**ave dum
 
 3. Run ns3 :
 
-> `sudo ./waf --run "v2i-multipath --simTime=60 --sumo-gui=false  --use-mptcpd --iperf=30"`
+> `sudo ./waf --run "v2i-multipath --simTime=60 --sumo-gui=false  --use-mptcpd --iperf=30 --iperfStart=10 --tcpdump"`
 > 
 > -simTime, Total duration of the simulation [s]
 > 
