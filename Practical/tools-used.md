@@ -227,6 +227,11 @@ consists of an invertible mechanism that allows sources to easily steer packets 
 **Run traffic through VirtualBox VM with mptcp kernel ;**
 <https://github.com/multipath-tcp/mptcp-virtual>
 
+### Rasbpberry 
+
+a Raspberry Pi 3 as a client running MPTCP 0.95.1 (I followed the cross-compiler guide from https://github.com/the-loudspeaker/raspi-mptcp-kernel)
+[issue is here](https://github.com/multipath-tcp/mptcp/issues/464)
+
 **OpenMPTCProuter: image to run on VM or raspberry**  
 <https://www.openmptcprouter.com/>
 
