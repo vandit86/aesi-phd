@@ -5,6 +5,9 @@
 ### install from source (New) 
   (this is good one): https://askubuntu.com/questions/718381/how-to-compile-and-install-custom-mainline-kernel/718662#718662 
   
+  **explanation on make** 
+  > http://embeddedguruji.blogspot.com/2019/01/make-config-vs-oldconfig-vs-defconfig.html 
+  
   **differences in config files**:  ``` scripts/diffconfig ```  
 
 **use just modules actually loaded** : `make localmodconfig`  
