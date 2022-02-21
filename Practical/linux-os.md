@@ -38,6 +38,7 @@ sudo dpkg -i linux-*.deb
 sudo update-grub
 ```
 
+**Also could be** >https://unix.stackexchange.com/questions/603365/building-a-custom-kernel-in-debian
 
 
 **Note:** Before booting a new kernel, you can check its configuration
