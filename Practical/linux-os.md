@@ -30,7 +30,10 @@ git clean -f
 rm vmlinux-gdb.py 
 #make sure there is no linux*.tar too 
 rm ../linux*.gz 
-s# make -j `getconf _NPROCESSORS_ONLN` deb-pkg LOCALVERSION=-custom 
+make -j `getconf _NPROCESSORS_ONLN` deb-pkg LOCALVERSION=-custom 
+# or if end with error 
+make -j `getconf _NPROCESSORS_ONLN` bindeb-pkg LOCALVERSION=-custom 
+
 cd ..
 sudo dpkg -i linux-image-2.6.24-rc5-custom_2.6.24-rc5-custom-10.00.Custom_i386.deb
 sudo dpkg -i linux-headers-2.6.24-rc5-custom_2.6.24-rc5-custom-10.00.Custom_i386.deb
