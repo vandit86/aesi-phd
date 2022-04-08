@@ -34,4 +34,4 @@ By receiving Test_Cmd from ns3, **plugin start tcpdump session**, and s**ave dum
 
 5. Analyze , **Plot** captured mptcp session with. Limitation: just for one connection see issue  
 
-`../network-traffic-analysis-tools/mptcpplot -yx  ~/ns-3-dev/dump-merged.pcap`
+`~/multipath-tcp-tools/network-traffic-analysis-tools/mptcpplot -yx  ~/ns-3-dev/dump-merged.pcap`
