@@ -62,11 +62,13 @@ https://www.cyberciti.biz/faq/debian-redhat-linux-delete-kernel-command/
 ### kernel boot order : 
 Also look in the `/boot/grub/grub.cfg` file for your kernel entry 
 
-change : 
-> 	`sudo nano /etc/default/grub`
+change : `sudo nano /etc/default/grub`
+
 > 	GRUB_DEFAULT="gnulinux-advanced-018d23c0-5a19-42e8-b64b-2c5c557c839a>gnulinux-5.4.0-mptcp-advanced-018d23c0-5a19-42e8-b64b-2c5c557c839a"
+> 	
 > #GRUB_DEFAULT=0
->  `sudo update-grub`
+
+`sudo update-grub`
 
 ## Process priority policies 
 How to Run A Command with a Given Nice Value: [-20 to 19]
