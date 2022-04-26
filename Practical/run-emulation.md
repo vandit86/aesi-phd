@@ -37,3 +37,12 @@ By receiving Test_Cmd from ns3, **plugin start tcpdump session**, and s**ave dum
 5. Analyze , **Plot** captured mptcp session with. Limitation: just for one connection see issue  
 
 `~/multipath-tcp-tools/network-traffic-analysis-tools/mptcpplot -yx  ~/ns-3-dev/dump-merged.pcap`
+
+# Genarate MPTCP traffic 
+
+simple client/server MPTCP traffic generator to measure one way application delay 
+Files in : _/home/vad/mptcp-traffic-gen/_
+
+
+
+
