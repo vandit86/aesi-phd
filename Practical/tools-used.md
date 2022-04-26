@@ -185,6 +185,46 @@ Realistic Traffic Generator <https://trex-tgn.cisco.com/>
 - visualize with **xplot.org**
 - xplot-to-gnuplot http://manpages.ubuntu.com/manpages/bionic/man1/xpl2gpl.1.html 
 
+##### Measure mptcp performance with _nstat_ 
+
+by running : `nstat --z -a '*MPTcp*'`  before and after iperf session we observe : 
+
+```
+MPTcpExtDataCsumErr             0                  0.0
+MPTcpExtOFOQueueTail            5533               0.0
+MPTcpExtOFOQueue                5714               0.0
+MPTcpExtOFOMerge                5273               0.0
+MPTcpExtNoDSSInWindow           0                  0.0
+MPTcpExtDuplicateData           0                  0.0
+MPTcpExtAddAddr                 0                  0.0
+MPTcpExtEchoAdd                 2                  0.0
+```
+
+_MPTcpExtDuplicateData_  duplicate data is reduced by 60-70%, **why duplication is occur ?** 
+_TcpExtTCPOFOQueue_  is reduced by 20%  
+check **nstat ...ods** file on mptcpv1-results directory 
+
+#### Measure mptcp performance with ss
+
+In-fly packets on each path ? RTO values ?    goodput / throughput , delay ? 
+
+`ss -Menita ` : produces results during the iperf session 
+
+```
+Process                                                                                                
+tcp       LISTEN      0           4096                   0.0.0.0:5001                0.0.0.0:*          ino:465942 sk:1 cgroup:unreachable:ac4 <->
+	 cubic cwnd:10 tcp-ulp-mptcp flags:m token:0000(id:0)/0000(id:0) seq:0 sfseq:0 ssnoff:0 maplen:0
+tcp       ESTAB       0           0                     13.0.0.2:5001               11.0.0.2:54618      ino:465944 sk:1001 cgroup:unreachable:ac4 <->
+	 ts sack cubic wscale:7,7 rto:268 rtt:67.084/33.542 ato:40 mss:1448 pmtu:1500 rcvmss:1424 advmss:1448 cwnd:10 bytes_received:2621152 segs_out:1238 segs_in:1861 data_segs_in:1857 send 1726790bps lastsnd:3812 pacing_rate 3453576bps delivered:1 rcv_rtt:68.043 rcv_space:14600 rcv_ssthresh:1611840 minrtt:67.084 tcp-ulp-mptcp flags:Mecv token:0000(id:0)/4f0889df(id:0) seq:dcbbd5fd0a6adc67 sfseq:27ab71 ssnoff:66ecfe12 maplen:fa50
+tcp       ESTAB       0           0                     14.0.0.2:5001               15.0.0.2:58921      ino:465944 sk:1002 cgroup:unreachable:ac4 <->
+	 ts sack cubic wscale:7,7 rto:268 rtt:65/32.5 ato:40 mss:1448 pmtu:1500 rcvmss:1424 advmss:1448 cwnd:10 bytes_received:2356488 segs_out:1117 segs_in:1665 data_segs_in:1663 send 1782154bps lastsnd:3548 lastrcv:12 lastack:12 pacing_rate 3564304bps delivered:1 rcv_rtt:68.815 rcv_space:14600 rcv_ssthresh:1611840 minrtt:65 tcp-ulp-mptcp flags:Jecv token:0000(id:0)/4f0889df(id:2) seq:dcbbd5fd0a69d77f sfseq:23b249 ssnoff:e8600ccf maplen:8510
+mptcp     ESTAB       70600       0                     13.0.0.2:5001               11.0.0.2:54618      ino:465944 sk:1003 cgroup:unreachable:ac4 <->
+	 subflows:1 add_addr_signal:2 subflows_max:2 add_addr_signal_max:2 add_addr_accepted_max:2 remote_key token:4f0889df write_seq:79d46b95c21aa8b snd_una:79d46b95c21aa8b rcv_nxt:dcbbd5fd0a6a307f
+````  
+
+ratio of frame retransmissions on MAC-layer can be used to determine wifi rssi for subflow status estimation, paper :Cross-layer path management in Multi-path transport protocol for mobile devices 
+
+
 
 ### Other <a name="other"></a>
 
