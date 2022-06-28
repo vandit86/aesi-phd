@@ -3,6 +3,7 @@
 - [Configuration](#Configuration)
 - [Configuration with iptools2](#iptools2)
 - [Netlink PM (mptcpd)](#netlink)
+- [MPTCP proxy setup](#proxy_setup)
 
 # MPTCP v1
 
@@ -136,4 +137,11 @@ flag during linking and do at least one of the following:
 
 See any operating system documentation about shared libraries for
 more information, such as the ld(1) and ld.so(8) manual pages.
-  
+
+ ### MPTCP proxy setup <a name="proxy_setup"></a>
+ 
+ using raspberry as proxy and ubuntu 22.04, 
+ * [example, tutorial configuration, june 2022](https://www.tessares.net/mptcp-proxy-setup-at-home-easier-now/)
+ 
+ 
+ 
