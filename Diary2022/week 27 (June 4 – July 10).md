@@ -14,7 +14,9 @@
 
 1. try to increase thput on LTE channel .. (the maximum upload/download = 1.5 Mb/s )
 	* veh speed not influence , useCa not influence , 
-	* **remove delays** induced by tc :  LTE inetrface increase thput up to 4-5 Mb/s, on WLAN up to 5 Mb/s 	
+	* **remove delays**  induced by tc :  LTE inetrface increase thput up to 4-5 Mb/s, on WLAN up to 5 Mb/s  (OK)	
+2. enable CA service on RSU and vehicles 
+3.
 
 
 #### Other tasks 
