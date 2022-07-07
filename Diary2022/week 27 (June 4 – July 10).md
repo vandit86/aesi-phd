@@ -16,7 +16,8 @@
 	* veh speed not influence , useCa not influence , 
 	* **remove delays**  induced by tc :  LTE inetrface increase thput up to 4-5 Mb/s, on WLAN up to 5 Mb/s  (OK)	
 2. enable **CA service** on RSU and vehicles 
-	* new branch -> modified 	 	
+	* new branch -> modified SimpleCamSender-gps-tc.cc 
+	* CAM is not sended  ?? maybe ipv6 problem since I set ipv4 addresess on interfaces.. but we can have 2 adrecess on iface.. 	 	
 4.
 
 
@@ -29,7 +30,7 @@
 total 3 
 
 1. read/wite    (++++++)  
-2. development  (+++)
+2. development  (++++)
 3. Other	() 
 
 
