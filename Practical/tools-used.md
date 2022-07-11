@@ -94,6 +94,8 @@ the values to be monitored (see ``man ss`` for explanation) :
 - `netstat -i` - see the number of packets sent from each interface
 - `netstat -s`  -statistics 
 
+### nmcli 
+_a Unix-based network manager tool that reports the wireless SSID network status, to control the connectivity between RSUs and vehicles to emulate vehicle mobility. When an OBU needs to move from one connected RSU to another, the nmcli module manages the disconnection from the current RSU, and sets up the connection with the new RSU_
 
 ### NIC control (Ethertool)
 
