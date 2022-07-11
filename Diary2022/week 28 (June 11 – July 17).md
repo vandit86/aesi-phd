@@ -9,6 +9,8 @@
 	* HetNets Selection by Clients: Convergence, Efficiency, and Practicality (2017) (OK)
 	* User-Centric Radio Access Technology Selection: A Survey of Game Theory Models and Multi-Agent Learning Algorithms (2021)
 	* Enabling DSRC and C-V2X Integrated Hybrid Vehicular Networks: Architecture and Protocol (2020) (OK)
+	* A mobile internal vertical handover mechanism for distributed mobility management in VANETs (2020) (OK) (PMIPv6) 
+	* Mobility-Aware Seamless Handover with MPTCP in Software-Defined HetNets (2021) (handover, fuzzy analytic hierarchy process sdn, mptcp, )
 
 2. Writing paper 4 : _An efficient radio access selection mechanism for hybrid vehicular networks_  
 
@@ -28,7 +30,7 @@
 
 total 3 
 
-1. read/wite    (+)  
+1. read/wite    (++)  
 2. development  ()
 3. Other	() 
 
