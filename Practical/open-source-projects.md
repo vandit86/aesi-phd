@@ -9,7 +9,11 @@
 https://progmp.net/
 https://github.com/vandit86/mptcp_progmp/tree/progmp_master
 
+## Emulation ns-3 
 
+#### D-LiTE: A platform for evaluating DASH performance over a simulated LTE network 
+
+[Demonstration Details](https://www.ucc.ie/en/misl/research/software/lanman2016/)
 
 ## netlink MPTCP PM 
 
