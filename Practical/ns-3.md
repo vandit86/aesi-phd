@@ -25,15 +25,15 @@ Start with: to load it in gdb:
 Type "run" to start execution. When it fails, type "bt" to get backtrace on where you were going. Restart, but this time before "run" set breakpoints, e.g. break mysource.cc:1234 to stop execution at that point. Then you can either type n or s to step line-by-line through the execution (s steps into function calls, n does not). You can use 'print varname' to check contents of variables and pretty much anything else (for class variables, you might need to use 'print this->classvar').
 
 ## Interact with the real world
-different possibilities : https://www.nsnam.org/wiki/HOWTO_make_ns-3_interact_with_the_real_world 
 
-Virtual Machine: https://www.nsnam.org/wiki/HOWTO_use_VMware_to_set_up_virtual_networks_(Windows)
-
-LInux Containers https://www.nsnam.org/wiki/HOWTO_Use_Linux_Containers_to_set_up_virtual_networks
-
-Combine with CORE network emulator: https://www.nsnam.org/wiki/HOWTO_Use_CORE_to_test_ns-3_protocols
-	
-ns3-lxc project, released on June 17, 2017.	https://github.com/buzz66boy/ns3-lxc/wiki/Release-v0.1
+* different possibilities : https://www.nsnam.org/wiki/HOWTO_make_ns-3_interact_with_the_real_world 
+* Virtual Machine: https://www.nsnam.org/wiki/HOWTO_use_VMware_to_set_up_virtual_networks_(Windows)
+* LInux Containers https://www.nsnam.org/wiki/HOWTO_Use_Linux_Containers_to_set_up_virtual_networks
+* Combine with CORE network emulator: https://www.nsnam.org/wiki/HOWTO_Use_CORE_to_test_ns-3_protocols
+* ns3-lxc project, released on June 17, 2017.	https://github.com/buzz66boy/ns3-lxc/wiki/Release-v0.1
+* DI5GUISE 2020 (A highly Dynamic Framework for Real-Time Simulated 5G Evaluation) : https://www.ucc.ie/en/misl/research/software/di5guise/
+* D-LiTE 2016 (A platform for evaluating DASH performance over a simulated LTE network): https://www.ucc.ie/en/misl/research/software/lanman2016/ 
+* DockerEmu () : https://chepeftw.github.io/NS3DockerEmulator/
 
 ## NS3 Tools
 
@@ -45,8 +45,7 @@ Topology gen : https://github.com/idaholab/Topology_Generator
 
 PyViz (enables a better view for simulation) : https://www.nsnam.org/wiki/PyViz
 
-DI5GUISE 2020 (A highly Dynamic Framework for Real-Time Simulated 5G Evaluation) : https://www.ucc.ie/en/misl/research/software/di5guise/
-D-LiTE 2016 (A platform for evaluating DASH performance over a simulated LTE network): https://www.ucc.ie/en/misl/research/software/lanman2016/ 
+
 
 ### ns-3 V2X TOOLS 
 ns-3 modules to build and simulate ETSI-compliant VANET (V2X) applications using SUMO (v-1.6.0+) and ns-3 (v-3.33), with the possibility of easily switching stack and communication technology. https://github.com/marcomali/ms-van3t
