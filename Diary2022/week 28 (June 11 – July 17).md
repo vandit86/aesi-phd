@@ -28,9 +28,9 @@
 
 ### Sprints
 
-total 3 
+total 
 
-1. read/wite    (++)  
+1. read/wite    (+++)  
 2. development  ()
 3. Other	() 
 
