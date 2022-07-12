@@ -4,7 +4,7 @@
 - [Tools used ](./tools-used.md)
 - [ Open source projects ](./open-source-projects.md)
 - [configuration and usage of LXC](./LXC.md)
-- [instalation, compilation and usage of ns-3](./ns-3.md)
+- [Ns-3: instalation, tools, usage](./ns-3.md)
 - [linux os: kernel configuration, compilation, TCP tunning](./linux-os.md)
 - [remote uminho host connection and configuration](./remote-host.md)
 - [MPTCP-V0 configuration, instalation, problems](./mptcp-v0.md)
