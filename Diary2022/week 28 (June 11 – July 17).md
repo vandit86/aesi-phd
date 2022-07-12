@@ -30,12 +30,14 @@
 
 total 
 
-1. read/wite    (+++)  
+1. read/wite    (+++++)  
 2. development  ()
 3. Other	() 
 
 
 ### Obs
+
+**Analytical Hierarchy Process**
 
 **Nash equilibrium** -> game theory  
 
