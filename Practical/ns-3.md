@@ -43,6 +43,11 @@ integration with mininet : https://github.com/mininet/mininet/wiki/Link-modeling
 
 Topology gen : https://github.com/idaholab/Topology_Generator
 
+PyViz (enables a better view for simulation) : https://www.nsnam.org/wiki/PyViz
+
+DI5GUISE 2020 (A highly Dynamic Framework for Real-Time Simulated 5G Evaluation) : https://www.ucc.ie/en/misl/research/software/di5guise/
+D-LiTE 2016 (A platform for evaluating DASH performance over a simulated LTE network): https://www.ucc.ie/en/misl/research/software/lanman2016/ 
+
 ### ns-3 V2X TOOLS 
 ns-3 modules to build and simulate ETSI-compliant VANET (V2X) applications using SUMO (v-1.6.0+) and ns-3 (v-3.33), with the possibility of easily switching stack and communication technology. https://github.com/marcomali/ms-van3t
 
