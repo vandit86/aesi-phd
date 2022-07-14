@@ -23,14 +23,14 @@
 
 
 #### Other tasks 
-1. 
+1. prepare Presentation to ICECE 
 
 
 ### Sprints
 
 total 
 
-1. read/wite    (+++++)  
+1. read/wite    (+++++++)  
 2. development  ()
 3. Other	() 
 
