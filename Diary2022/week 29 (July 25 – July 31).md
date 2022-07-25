@@ -14,7 +14,7 @@
 1. enable **CA service** on RSU and vehicles 
 	* new branch -> modified SimpleCamSender-gps-tc.cc 
 	* CAM is not sended  ?? maybe ipv6 problem since I set ipv4 addresess on interfaces.. but we can have 2 adrecess on iface.. 	 	
-	* 
+	* **Resolved** : need to set device explicitely on SimpleCamService.. our vehicle and RSU used device "1" and other vehciles device "0"
 
 
 #### Other tasks 
