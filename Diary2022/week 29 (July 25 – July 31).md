@@ -12,9 +12,10 @@
 #### Development
 
 1. enable **CA service** on RSU and vehicles 
-	* new branch -> modified SimpleCamSender-gps-tc.cc 
-	* CAM is not sended  ?? maybe ipv6 problem since I set ipv4 addresess on interfaces.. but we can have 2 adrecess on iface.. 	 	
+	* new branch -> modified SimpleCamSender-gps-tc.cc 	 	
 	* **Resolved** : need to set device explicitely on SimpleCamService.. our vehicle and RSU used device "1" and other vehciles device "0"
+	* new programm attribute _--send-cam_ is used if you whant that all vehciles and rsu send a CAM
+	* branch merged into main  
 
 
 #### Other tasks 
@@ -26,7 +27,7 @@
 total 3 
 
 1. read/wite    ()  
-2. development  (**)
+2. development  (****)
 3. Other	() 
 
 
