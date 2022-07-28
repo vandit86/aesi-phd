@@ -17,6 +17,9 @@
 	* new programm attribute _--send-cam_ is used if you whant that all vehciles and rsu send a CAM
 	* branch merged into main  
 
+2. **Define vehicle in simulation limits** 
+	* Tets **maximum number** of vehicles running in simulation with CA servise is **22 veh** + rsu, jitter is above 100ms. 
+	* With CA service disabled the maximum vehicles is around 40.. connected to respective ns-3 node..  
 
 #### Other tasks 
 1. review on google Blogs and google site : idea to create own blog (or site) for PhD tasks descriptions ? 
@@ -27,7 +30,7 @@
 total 3 
 
 1. read/wite    ()  
-2. development  (****)
+2. development  (*****)
 3. Other	() 
 
 
