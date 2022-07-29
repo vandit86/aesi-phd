@@ -4,10 +4,14 @@
 ### PhD tasks 
 
 #### Read/Wite
-1. read **Papers** to find possible sollution for **inteligent network selection mechanism **
+1. Study to find possible sollution for **inteligent network selection mechanism **
+
+2. Fuzzy logic
+	- [Paper in rus example fuzzy logic ](https://www.ispras.ru/proceedings/docs/2002/3/isp_3_2002_121.pdf)
+	- [youtube video rus theory](https://www.youtube.com/watch?v=bv0WjMGQK6Q)  	
 
 
-2. Writing paper 4 : _An efficient radio access selection mechanism for hybrid vehicular networks_  
+3. Writing paper 4 : _An efficient radio access selection mechanism for hybrid vehicular networks_  
 
 #### Development
 
@@ -22,15 +26,16 @@
 	* With CA service disabled the maximum vehicles is around 40.. connected to respective ns-3 node..  
 
 #### Other tasks 
-1. review on google Blogs and google site : idea to create own blog (or site) for PhD tasks descriptions ? 
+
+1. conference SoftCom
 
 
 ### Sprints
 
 total 3 
 
-1. read/wite    ()  
-2. development  (*****)
+1. read/wite    (++)  
+2. development  (+++++)
 3. Other	() 
 
 
