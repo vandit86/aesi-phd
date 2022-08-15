@@ -26,7 +26,7 @@ run `./waf --run "v2i-multipath --PrintHelp"`  to see all options
 >
 > --maxSpeed : initial max veh speed [km/h] (25)
 > 
-> --send-cam : enable CA service on vehicles and RSU (true), if not UDP traffic will be generated just on RSU (beacons) 
+> --send-cam : enable CA service on vehicles and RSU (default **true**), if disabled UDP traffic will be generated just on RSU (beacons) 
 > 
 > --changeVehMaxSpeed=10 :  This will change the maximul veh speed every 10 sec. randomly from [40:120]km/h. if [0] max speed is not changed during the simulation. to simulate dinamism of vehicle movements.. 
 > 
