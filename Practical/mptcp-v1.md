@@ -54,9 +54,21 @@ q
 ## Configuration <a name="Configuration"></a>
 
   **/proc/sys/net/mptcp/*** Variables   → configuration variables 
-https://www.kernel.org/doc/html/v5.15-rc6/networking/mptcp-sysctl.html 
+- [Kernel v5.15](https://www.kernel.org/doc/html/v5.15-rc6/networking/mptcp-sysctl.html) 
+- [Kervel v5.19](https://www.kernel.org/doc/html/v5.19/networking/mptcp-sysctl.html?highlight=mptcp)
 
 - **enabled** - BOOLEAN Control whether MPTCP sockets can be created. MPTCP sockets can be created if the value is 1. This is a per-namespace sysctl. Default: 1 (enabled) 
+
+- **pm_type** - INTEGER
+
+Set the default path manager type to use for each new MPTCP socket. In-kernel path management will control subflow connections and address advertisements according to per-namespace values configured over the MPTCP netlink API. Userspace path management puts per-MPTCP-connection subflow connection decisions and address advertisements under control of a privileged userspace program, at the cost of more netlink traffic to propagate all of the related events and commands.
+
+This is a per-namespace sysctl.
+
+0 - In-kernel path manager
+
+1 - Userspace path manager
+ 
 - **add_addr_timeout** - INTEGER (seconds) Set the timeout after which an ADD_ADDR control message will be resent to an MPTCP peer that has not acknowledged a previous ADD_ADDR message. The default value matches TCP_RTO_MAX. This is a per-namespace sysctl. Default: 120 
 
 - **checksum_enabled** - BOOLEAN Control whether DSS checksum can be enabled. DSS checksum can be enabled if the value is nonzero. This is a per-namespace sysctl. Default: 0 
