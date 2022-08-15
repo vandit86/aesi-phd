@@ -9,7 +9,9 @@ run emulation setup : namespaces + ns3 + CORE
 Plugin will **start to listen** commands on FIFO pipe, commands are specified on mptcp_ns3.h inside mptcpd project directory..   
 for example : By receiving Test_Cmd from ns3, **plugin start tcpdump session**, and save dump to files  
 
-`/home/vad/mptcpd/build/src/mptcpd --plugin-dir=/home/vad/mptcpd/build/plugins/path_managers/.libs --path-manager=sspi --addr-flags=subflow`
+`/home/vad/mptcpd/build/src/mptcpd --plugin-dir=/home/vad/mptcpd/build/plugins/path_managers/.libs --path-manager=sspi `
+
+`--addr-flags=subflow` not nedded
 
 check mptcp limits  `ip mptcp lim`
 
