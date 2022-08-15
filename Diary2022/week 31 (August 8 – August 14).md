@@ -15,6 +15,7 @@ Studdy possible solutions :
 
 1. New kernel v5.19 with userspace pm  and new **mptcpd** version with new commands to create or remove subflows.. 
 2. Pyhton lybrary was found with multiple **MCDM** algorithms to calculate weights vector:  _from pyDecision.algorithm import ahp_method_
+3. new repository **intel/mptcpd**, RSSI-based algorithm passed to _master_ verersion of mptcpd..  
 
 
 #### 3. Other tasks 
@@ -23,13 +24,14 @@ Studdy possible solutions :
 ### Sprints
 
 1. Task 1 (+++++++)  
-2. Task 2 (+)
+2. Task 2 (++++)
 3. Task 3 () 
 
 
 ### Obs
 
-Focus on FAHP and how to include vehicle mobility into decision process 
+Focus on FAHP and how to include vehicle mobility into decision process -> solution based on time vehicle pass in coverage area of RSU 
+
 
 
 
