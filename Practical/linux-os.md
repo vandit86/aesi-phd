@@ -2,6 +2,34 @@
 
 ## Kernel  
 
+### Update linux .git 
+
+```
+git fetch origin   
+git reset --hard origin/export  # reset to last version
+
+#Use the following command to clean up any untracked changes:
+git clean -xdf
+
+#copy old config 
+cp /boot/config-4.4.0-040400rc8-generic .config
+
+#add new features with default values  
+make olddefconfig 
+
+# add required options : see ~/script_conf.sh
+
+# compile 
+time make -j9 bindeb-pkg LOCALVERSION=-stock 
+
+# install 
+sudo dpkg -i ../linux-headers-4.4.0-rc8-stock_4.4.0-rc8-stock-144_amd64.deb
+sudo dpkg -i ../linux-image-4.4.0-rc8-stock_4.4.0-rc8-stock-144_amd64.deb
+
+#not necessary 
+sudo update-grub
+```
+
 ### install from source (New) 
   (this is good one): https://askubuntu.com/questions/718381/how-to-compile-and-install-custom-mainline-kernel/718662#718662 
   
