@@ -45,12 +45,18 @@ run `./waf --run "v2i-multipath --PrintHelp"`  to see all options
 > --"verbose", Print debug data on console every sec [true] 
 >
 > 
-4. After simulation end on ‘left’ NS, **merge dump** of 2 ifaces : 
+4. (NOT NEDDED) After simulation end on ‘left’ NS, **merge dump** of 2 ifaces : 
 `mergecap dump-0.pcap dump-1.pcap -w /home/vad/ns-3-dev/dump-merged.pcap`
 
 5. Analyze , **Plot** captured mptcp session with. Limitation: just for one connection see issue  
 
 `~/multipath-tcp-tools/network-traffic-analysis-tools/mptcpplot -yx  ~/ns-3-dev/dump-merged.pcap`
+
+plot with xplot tool 
+'xplot.org connection_0-ORIGIN.xpl'
+
+(if you needed)
+convert to to .plt with xpl2plt tool, and plot with gnuplot , (example in OneDrive/results/xpl/gpl/) 
 
 # Genarate MPTCP traffic 
 
