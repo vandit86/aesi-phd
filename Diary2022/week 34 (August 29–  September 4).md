@@ -11,7 +11,8 @@ Studdy possible solutions :
 
  1. implement and test basic functionality of userspace pm (sf_create, sf_backup)..
  2. create record about potential subflow, mark sf as 'non active', so we can use it to create new subflows when decision algorithm order it..
- 3.  Implement fuzzy ahp solution plugin for mptcpd    
+ 3. Get data for ecision process (data rate, rtt, jitter, loss-rate, velocity, acc, RSU-rss, RSU-position... )
+ 4. Implement fuzzy ahp solution plugin for mptcpd    
 
  code in  _mptcpd/fuzzy-ahp-pm_ branch 
 
