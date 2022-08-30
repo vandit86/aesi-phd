@@ -54,6 +54,7 @@ q
 ## Configuration <a name="Configuration"></a>
 
   **/proc/sys/net/mptcp/*** Variables   → configuration variables 
+- [sysctl variables](https://github.com/multipath-tcp/mptcp_net-next/blob/export/Documentation/networking/mptcp-sysctl.rst)
 - [Kernel v5.15](https://www.kernel.org/doc/html/v5.15-rc6/networking/mptcp-sysctl.html) 
 - [Kervel v5.19](https://www.kernel.org/doc/html/v5.19/networking/mptcp-sysctl.html?highlight=mptcp)
 
