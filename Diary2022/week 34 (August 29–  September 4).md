@@ -9,6 +9,7 @@ Studdy possible solutions :
 
 #### 2. Development
 
+**mptcpd**
  1. implement and test basic functionality of userspace pm (sf_create, sf_backup)..
  2. create record about potential subflow, mark sf as 'non active', so we can use it to create new subflows when decision algorithm order it..
  3. Get data for ecision process (data rate, rtt, jitter, loss-rate, velocity, acc, RSU-rss, RSU-position... )
@@ -16,6 +17,9 @@ Studdy possible solutions :
 
  code in  _mptcpd/fuzzy-ahp-pm_ branch 
 
+**ns-3**
+ 1. new send_data_to_plugin function is created to send all ns3 data to mptcpd plugin:  data is successfully received on sspi plugin
+ 2. new --inter-data parameter introduced to configure interval in [ms] to send data message to mptcpd plugin: 
 
 #### 3. Other tasks 
  server shut down resolved  
@@ -24,7 +28,7 @@ Studdy possible solutions :
 ### Sprints
 
 1. Task 1 ()  
-2. Task 2 (+++)
+2. Task 2 (+++++++++)
 3. Task 3 () 
 
 
