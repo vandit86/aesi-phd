@@ -18,17 +18,22 @@ Studdy possible solutions :
  code in  _mptcpd/fuzzy-ahp-pm_ branch 
 
 **ns-3**
- 1. new send_data_to_plugin function is created to send all ns3 data to mptcpd plugin:  data is successfully received on sspi plugin
+ 1. new _send_data_to_plugin_ function is created to send all ns3 data to mptcpd plugin:  data is successfully received on sspi plugin
  2. new --inter-data parameter introduced to configure interval in [ms] to send data message to mptcpd plugin: 
+ 3.  _Flow monitor_ source code was updated in order to allow capture metrics of flows created outside the simulator.. 
+install monitor on both ghosts, the forwarded addresses of containers are  hardcoded
+
+see [TASK ](https://github.com/vandit86/aesi-phd/projects/1#card-85421755)
 
 #### 3. Other tasks 
- server shut down resolved  
+ - server shut down resolved  
+ - VM beckup maded 
 
 
 ### Sprints
 
-1. Task 1 ()  
-2. Task 2 (+++++++++)
+1. Task 1 (++)  
+2. Task 2 (++++++++++++++++)
 3. Task 3 () 
 
 
