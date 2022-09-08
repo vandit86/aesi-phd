@@ -32,8 +32,8 @@ see data aquisition [TASK ](https://github.com/vandit86/aesi-phd/projects/1#card
 
 ### Sprints
 
-1. Task 1 ()  
-2. Task 2 (++)
+1. Task 1 (++)  
+2. Task 2 (+++++++++++)
 3. Task 3 () 
 
 
