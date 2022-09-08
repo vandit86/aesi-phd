@@ -119,6 +119,8 @@ https://www.kernel.org/doc/Documentation/networking/ip-sysctl.txt
 
 <https://fasterdata.es.net/host-tuning/linux/>
 
+[tcp settings ](https://www.ibm.com/docs/en/linux-on-systems?topic=tuning-tcpip-ipv4-settings)
+
 The **cwnd of this path should be set as 0** which indicates it is **unable for data transmission**
 
 TCP performance depends on the product of the **transfer rate** and the **round-trip delay**
