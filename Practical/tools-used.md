@@ -95,7 +95,11 @@ the values to be monitored (see ``man ss`` for explanation) :
 - `netstat -s`  -statistics 
 
 ### nmcli 
+
 _a Unix-based network manager tool that reports the wireless SSID network status, to control the connectivity between RSUs and vehicles to emulate vehicle mobility. When an OBU needs to move from one connected RSU to another, the nmcli module manages the disconnection from the current RSU, and sets up the connection with the new RSU_
+
+**MPTCP support**
+NetworkManager can now do endpoint management for MPTCP. Endpoints are IP addresses that can be announced or used for additional subflows. Those can be configured manually with iproute2’s ip mptcp endpoint command or automatically by the mptcpd daemon. NetworkManager now also automatically configures endpoints, similar to mptcpd’s address notification feature.
 
 ### NIC control (Ethertool)
 
