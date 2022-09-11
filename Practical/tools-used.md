@@ -94,12 +94,16 @@ the values to be monitored (see ``man ss`` for explanation) :
 - `netstat -i` - see the number of packets sent from each interface
 - `netstat -s`  -statistics 
 
-### nmcli 
+### Network Manager (nmcli) 
 
 _a Unix-based network manager tool that reports the wireless SSID network status, to control the connectivity between RSUs and vehicles to emulate vehicle mobility. When an OBU needs to move from one connected RSU to another, the nmcli module manages the disconnection from the current RSU, and sets up the connection with the new RSU_
 
 **MPTCP support**
 NetworkManager can now do endpoint management for MPTCP. Endpoints are IP addresses that can be announced or used for additional subflows. Those can be configured manually with iproute2’s ip mptcp endpoint command or automatically by the mptcpd daemon. NetworkManager now also automatically configures endpoints, similar to mptcpd’s address notification feature.
+This is configurable via the “connection.mptcp-flags” property. The default setting is such that MPTCP handling is automatically enabled if the kernel sysctl “/proc/sys/net/mptcp/enabled” indicates so.
+
+But NM at least has all the information (on which is which, and on how long the address will still be valid), if any is needed.
+[1]: Depending what the userspace MPTCP manager can do exactly (don't know), it might be possible to even set them per connection -- so if you have a connection established at point T1 from the ethernet address E(T1) would also get the WiFi address W(T1) but none of the T2, but that's probably far out of scope right now.
 
 ### NIC control (Ethertool)
 
