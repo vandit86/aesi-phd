@@ -18,6 +18,9 @@ available in mainline kernel : https://github.com/multipath-tcp/mptcp_net-next/w
 instalation is similar to mptcp v0
 
 ### MPTCP.v0 vs MPTCP.v1  
+
+Explenation on diff v1 vs v0 : https://github.com/multipath-tcp/mptcp_net-next/issues/300
+
 My question on mptcpv1 repo github : explanation about upstream and out-of-tree implementation of mptcp 
 https://github.com/multipath-tcp/mptcp_net-next/issues/251 
 
@@ -88,6 +91,15 @@ This is a per-namespace sysctl.
   `man ip mptcp` : ip mptcp (man page)-> https://man7.org/linux/man-pages/man8/ip-mptcp.8.html  
 
 (iproute2 how to use) https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/html/configuring_and_managing_networking/getting-started-with-multipath-tcp_configuring-and-managing-networking 
+ 
+### Configuration with Network Manager 
+ 
+ https://networkmanager.dev/blog/networkmanager-1-40/ 
+ https://networkmanager.dev/docs/api/latest/NetworkManager.conf.html
+ 
+ MPTCP support NetworkManager can now do endpoint management for MPTCP. Endpoints are IP addresses that can be announced or used for additional subflows. Those can be configured manually with iproute2’s ip mptcp endpoint command or automatically by the mptcpd daemon. NetworkManager now also automatically configures endpoints, similar to mptcpd’s address notification feature. This is configurable via the “connection.mptcp-flags” property. The default setting is such that MPTCP handling is automatically enabled if the kernel sysctl “/proc/sys/net/mptcp/enabled” indicates so.
+
+But NM at least has all the information (on which is which, and on how long the address will still be valid), if any is needed. [1]: Depending what the userspace MPTCP manager can do exactly (don't know), it might be possible to even set them per connection -- so if you have a connection established at point T1 from the ethernet address E(T1) would also get the WiFi address W(T1) but none of the T2, but that's probably far out of scope right now.
   
 ## Netlink PM (mptcpd) <a name="netlink"></a>
 
@@ -153,7 +165,12 @@ flag during linking and do at least one of the following:
 See any operating system documentation about shared libraries for
 more information, such as the ld(1) and ld.so(8) manual pages.
 
- ### MPTCP proxy setup <a name="proxy_setup"></a>
+## BPF: packet scheduler
+ 
+ https://github.com/multipath-tcp/mptcp_net-next/issues/75
+ 
+ 
+## MPTCP proxy setup <a name="proxy_setup"></a>
  
  using raspberry as proxy and ubuntu 22.04, 
  * [example, tutorial configuration, june 2022](https://www.tessares.net/mptcp-proxy-setup-at-home-easier-now/)
