@@ -12,7 +12,7 @@ Studdy possible solutions :
 **mptcpd**
 
  1. Implement fuzzy ahp solution plugin for mptcpd    
- 2. How to include** Mobility attribute** into decision process ?? see: [TASK](https://github.com/vandit86/aesi-phd/issues/34#issuecomment-1210557880)
+ 2. **dwell time calculation**: How to include Mobility attribute** into decision process ?? see: [TASK](https://github.com/vandit86/aesi-phd/issues/34#issuecomment-1210557880)
 
  
 #### 3. Other tasks
@@ -21,12 +21,11 @@ Studdy possible solutions :
 
 ### Sprints
 
-1. Task 1 ()  
-2. Task 2 ()
+1. Task 1 (+++++++)  
+2. Task 2 (++)
 3. Task 3 () 
 
 
 ### Obs
-
 Focus on FAHP and how to include vehicle mobility into decision process -> solution based on time vehicle pass in coverage area of RSU 
 Pyhton lybrary was found with multiple **MCDM** algorithms to calculate weights vector:  _from pyDecision.algorithm import ahp_method_
