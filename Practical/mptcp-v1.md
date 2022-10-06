@@ -15,7 +15,10 @@ RFC 8684 : https://www.rfc-editor.org/rfc/rfc8684.html#name-requesting-a-change-
 
 available in mainline kernel : https://github.com/multipath-tcp/mptcp_net-next/wiki 
 
-instalation is similar to mptcp v0
+### instalation 
+is similar to mptcp v0: **building and install from source** 
+or 
+install compiled .deb packeges from https://kernel.ubuntu.com/~kernel-ppa/mainline/ e.g. take the v6.0 version.. install headers and image .. (not tested)
 
 ### MPTCP.v0 vs MPTCP.v1  
 
