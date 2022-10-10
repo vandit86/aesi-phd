@@ -125,7 +125,16 @@ cd the_build
 ../configure
 make
 ```
-  
+
+**ADD to Makefile in plugins dir**  
+_-pthread_ -> required to start listening thread in sspi plugin
+ 
+ `CFLAGS =  -g -O0 -Og -fvisibility=hidden -Wall -pthread -Wextra -Werror -pedantic -fstack-protector-strong -Wformat=2`
+ 
+add _library math_ for pow calculation 
+ 
+ `CODE_COVERAGE_LIBS = "-lm"`
+ 
 **uninstall:** in folder og mptcpd : 
 ```  
 make uninstall  	
