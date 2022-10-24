@@ -191,6 +191,9 @@ more information, such as the ld(1) and ld.so(8) manual pages.
  Disscussion on mptcp_next github : 
  * https://github.com/multipath-tcp/mptcp_net-next/issues/311
  
+ Example proxy : 
+ https://www.tessares.net/mptcp-proxy-setup-at-home-easier-now/
+ 
  using raspberry as proxy and ubuntu 22.04, 
  * [example, tutorial configuration, june 2022](https://www.tessares.net/mptcp-proxy-setup-at-home-easier-now/)
  
