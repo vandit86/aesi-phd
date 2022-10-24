@@ -59,7 +59,9 @@ Usage: ./use_mptcp.sh <app> <app command line>
 It will build on the fly wrapper library to hijack the socket() libcall, requires gcc and make
 
 `sh /home/vad/mptcp-tools/use_mptcp/use_mptcp.sh  iperf3 -s &`
-q
+
+### Utilization in different prog. languages: 
+ https://github.com/mptcp-apps/mptcp-hello 
   
 ## Configuration <a name="Configuration"></a>
 
@@ -185,6 +187,9 @@ more information, such as the ld(1) and ld.so(8) manual pages.
  
  
 ## MPTCP proxy setup <a name="proxy_setup"></a>
+ 
+ Disscussion on mptcp_next github : 
+ * https://github.com/multipath-tcp/mptcp_net-next/issues/311
  
  using raspberry as proxy and ubuntu 22.04, 
  * [example, tutorial configuration, june 2022](https://www.tessares.net/mptcp-proxy-setup-at-home-easier-now/)
