@@ -12,10 +12,13 @@ Studdy possible solutions :
 
 **mptcpd**
 
- 1. Configure .py script to define consistent pairwaise comparation matrix, and calculate weights vector, using dedicated pyhton lybrary 
- 2. Implement fuzzy ahp solution plugin for mptcpd    
+ 1. Search for Traffic generation tools, with different traffic patterns (voice, video, web) to test MADM algorithm
+ 2. Video streaming tools on LXC ??   
+ 3. Configure .py script to define consistent pairwaise comparation matrix, and calculate weights vector, using dedicated pyhton lybrary 
+ 4. new services should be integrated (voice and video?) 
+ 5. Implement fuzzy ahp solution plugin for mptcpd    
     - calculate score for each network/service and create logic to react accordingly.. 
-    - solution can create or put on background selected subflow.. 
+    - solution can create or change subflow priority (background).. 
     - (**remove_sf**) does not provide any change ??
      
 **ns-3**
