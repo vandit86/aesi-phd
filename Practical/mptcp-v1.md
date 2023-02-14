@@ -23,6 +23,7 @@ available in mainline kernel : https://github.com/multipath-tcp/mptcp_net-next/w
 is similar to mptcp v0: **building and install from source** 
 or 
 install compiled .deb packeges from https://kernel.ubuntu.com/~kernel-ppa/mainline/ e.g. take the v6.0 version.. install headers and image .. (not tested)
+instructions to install from pre-compiled .deb -> https://askubuntu.com/questions/1388115/how-do-i-update-my-kernel-to-the-latest-one
 
 ### MPTCP.v0 vs MPTCP.v1  
 
