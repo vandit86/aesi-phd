@@ -23,7 +23,7 @@ this can be used with CORE experiments ...
 3. Run ns3 :
 
 **exemple how to run**
-> `sudo ./waf --run "v2i-multipath --simTime=60 --sumo-gui=false  --use-mptcpd --iperf=30 --iperfStart=10 --tcpdump"`
+> `sudo ./waf --run "v2i-multipath --simTime=60  --use-mptcpd --iperf=30 --iperfStart=10 --tcpdump"`
 
 run `./waf --run "v2i-multipath --PrintHelp"`  to see all options 
 
