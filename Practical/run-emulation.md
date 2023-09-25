@@ -5,7 +5,10 @@ run emulation setup : namespaces + ns3 + CORE
 1. initialize pere configured namespaces 
 `sudo sh ./examples/multipath/namespace-setup.sh` 
 
-1a. On "left"  enable userspace pm with 
+1a. run interactive mode bash session on left 
+> `sudo ip netns exec left bash`
+
+1b. On "left"  enable userspace pm with 
 >`echo 1 > /proc/sys/net/mptcp/pm_type`
 
 check mptcp limits  `ip mptcp lim`, not nedded if use sspi plugin 
